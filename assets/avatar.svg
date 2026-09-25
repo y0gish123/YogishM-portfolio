@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+    <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <rect width="400" height="400" rx="200" fill="url(#bg-grad)" />
+  
+  <!-- Outer Decorative Ring -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="url(#accent-grad)" stroke-width="4" stroke-dasharray="8 8" opacity="0.6" />
+  
+  <!-- Glow Circle Behind Head -->
+  <circle cx="200" cy="150" r="85" fill="url(#avatar-grad)" opacity="0.3" filter="url(#glow)" />
+
+  <!-- Shoulders & Body -->
+  <path d="M 80 360 C 80 270, 130 240, 200 240 C 270 240, 320 270, 320 360 Z" fill="url(#avatar-grad)" />
+  
+  <!-- Collar details -->
+  <path d="M 160 245 L 200 285 L 240 245" fill="none" stroke="#e0e7ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Neck -->
+  <rect x="175" y="180" width="50" height="70" rx="10" fill="#fbcfe8" opacity="0.9" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="145" rx="60" ry="70" fill="#fde047" opacity="0.9" />
+
+  <!-- Hair -->
+  <path d="M 135 140 C 130 80, 180 65, 200 65 C 230 65, 270 80, 265 140 C 250 100, 220 90, 200 90 C 180 90, 150 100, 135 140 Z" fill="#1e1b4b" />
+
+  <!-- Eyes -->
+  <circle cx="178" cy="140" r="6" fill="#1e1b4b" />
+  <circle cx="222" cy="140" r="6" fill="#1e1b4b" />
+  <circle cx="180" cy="138" r="2" fill="#ffffff" />
+  <circle cx="224" cy="138" r="2" fill="#ffffff" />
+
+  <!-- Glasses -->
+  <rect x="160" y="128" width="35" height="24" rx="6" fill="none" stroke="#38bdf8" stroke-width="4" />
+  <rect x="205" y="128" width="35" height="24" rx="6" fill="none" stroke="#38bdf8" stroke-width="4" />
+  <line x1="195" y1="140" x2="205" y2="140" stroke="#38bdf8" stroke-width="4" />
+
+  <!-- Smile -->
+  <path d="M 180 170 Q 200 185 220 170" fill="none" stroke="#1e1b4b" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Developer Code Badge -->
+  <g transform="translate(145, 300)">
+    <rect width="110" height="34" rx="17" fill="#0f172a" stroke="#6366f1" stroke-width="2" />
+    <text x="55" y="22" font-family="monospace" font-size="14" font-weight="bold" fill="#38bdf8" text-anchor="middle">&lt;DEV /&gt;</text>
+  </g>
+</svg>

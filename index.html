@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Yogesh - Web Developer specializing in HTML, CSS, JavaScript, and modern front-end design. Week 1 HTML & CSS Fundamentals Assignment.">
+    <meta name="keywords" content="Portfolio, Web Development, HTML5, CSS3, JavaScript, Developer, Front-End">
+    <meta name="author" content="Yogesh">
+    <title>Yogesh | Web Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" stroke="none">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="logo" id="brand-logo">
+                <span class="logo-bracket">&lt;</span>Yogesh<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link active" id="nav-link-about">About</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary nav-cta" id="nav-contact-btn">Hire Me</a>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-pill" id="assignment-badge">
+                        <i class="fa-solid fa-code"></i> Internship Assignment 1 — HTML & CSS
+                    </div>
+                    <h1 class="hero-title">
+                        Building <span class="gradient-text">Beautiful</span> &amp; Functional Web Experiences
+                    </h1>
+                    <p class="hero-subtitle">
+                        Hi, I'm <strong>Yogesh</strong> — an aspiring Web Developer focused on clean HTML5 semantic structures, responsive CSS layouts, and modern web application designs.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+                            Get In Touch <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-outline" id="hero-about-btn">
+                            Explore Profile <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                    <div class="hero-quick-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">Week 1</span>
+                            <span class="stat-label">Web Dev Focus</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Semantic HTML5</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">Responsive</span>
+                            <span class="stat-label">CSS Layouts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="image-wrapper">
+                        <div class="glow-backdrop"></div>
+                        <img src="assets/avatar.svg" alt="Yogesh Profile Photo" class="profile-img" id="hero-profile-photo">
+                        <div class="floating-badge badge-1">
+                            <i class="fa-brands fa-html5 html-icon"></i>
+                            <span>HTML5 Semantic</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fa-brands fa-css3-alt css-icon"></i>
+                            <span>Flexbox &amp; Grid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card profile-card">
+                        <div class="profile-photo-box">
+                            <img src="assets/avatar.svg" alt="Yogesh Developer Headshot" id="about-profile-photo">
+                            <div class="photo-overlay">
+                                <span class="status-indicator"></span> Available for Projects
+                            </div>
+                        </div>
+                        <h3 class="profile-name">Yogesh</h3>
+                        <p class="profile-role">Web Developer &amp; Tech Enthusiast</p>
+                        <div class="social-links">
+                            <a href="https://github.com/y0gish123" target="_blank" rel="noopener" aria-label="GitHub Profile" id="github-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile" id="linkedin-link">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:yogesh@example.com" aria-label="Send Email" id="email-quick-link">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-card content-card">
+                        <h3 class="content-title">Passionate about Web Technologies &amp; Clean Code</h3>
+                        <p class="about-text">
+                            I am currently completing Week 1 of the Web Development Internship, focusing on mastering HTML5 structure, semantic elements, CSS layout techniques, and modern responsive design.
+                        </p>
+                        <p class="about-text">
+                            My goal is to craft intuitive, fast, and aesthetically pleasing websites that deliver engaging user experiences. I strongly believe in writing structured, accessible, and maintainable code from the ground up.
+                        </p>
+
+                        <div class="info-highlights-grid">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-layer-group highlight-icon"></i>
+                                <div>
+                                    <h4>Structure &amp; Semantics</h4>
+                                    <p>Standard HTML tags (header, section, footer, main, nav)</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-palette highlight-icon"></i>
+                                <div>
+                                    <h4>Design &amp; Styling</h4>
+                                    <p>Modern CSS3, custom properties, animations, gradients</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-mobile-screen-button highlight-icon"></i>
+                                <div>
+                                    <h4>Responsive Layouts</h4>
+                                    <p>Mobile-first design with CSS Grid and Flexbox</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-code-commit highlight-icon"></i>
+                                <div>
+                                    <h4>Version Control</h4>
+                                    <p>Git workflow, clean repository commits and releases</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="#contact" class="btn btn-primary" id="about-hire-btn">Contact Me</a>
+                            <a href="#skills" class="btn btn-outline" id="about-skills-btn">View My Skills</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Academic Journey</span>
+                    <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Education Item 1 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2022 — Present</span>
+                                <span class="timeline-badge">Current</span>
+                            </div>
+                            <h3 class="timeline-title">Bachelor of Technology (B.Tech) in Computer Science</h3>
+                            <h4 class="timeline-institution"><i class="fa-solid fa-university"></i> University / College of Technology</h4>
+                            <p class="timeline-description">
+                                Specializing in Software Engineering, Web Technologies, Data Structures, Algorithms, and Database Management Systems. Maintaining a strong academic record while actively building real-world projects.
+                            </p>
+                            <div class="coursework-tags">
+                                <span class="tag">Web Development</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">DBMS</span>
+                                <span class="tag">OOP Languages</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Education Item 2 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2020 — 2022</span>
+                                <span class="timeline-badge badge-secondary">Completed</span>
+                            </div>
+                            <h3 class="timeline-title">Senior Secondary Education (Class XII)</h3>
+                            <h4 class="timeline-institution"><i class="fa-solid fa-school"></i> Science Stream (PCM)</h4>
+                            <p class="timeline-description">
+                                Completed Higher Secondary Education with focus on Physics, Chemistry, and Mathematics, developing analytical thinking and logical problem-solving foundation.
+                            </p>
+                            <div class="coursework-tags">
+                                <span class="tag">Mathematics</span>
+                                <span class="tag">Physics</span>
+                                <span class="tag">Computer Science</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Education Item 3 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2026</span>
+                                <span class="timeline-badge badge-accent">Web Internship</span>
+                            </div>
+                            <h3 class="timeline-title">Web Development Training &amp; Internship</h3>
+                            <h4 class="timeline-institution"><i class="fa-solid fa-laptop-code"></i> Practical Web Dev Foundations</h4>
+                            <p class="timeline-description">
+                                Intensive focus on HTML5 semantic layouts, CSS3 modern design systems, responsive media queries, JavaScript interactivity, and version control management with Git.
+                            </p>
+                            <div class="coursework-tags">
+                                <span class="tag">Semantic HTML</span>
+                                <span class="tag">CSS Grid &amp; Flexbox</span>
+                                <span class="tag">Git &amp; GitHub</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Technical Expertise</span>
+                    <h2 class="section-title">Skills &amp; <span class="gradient-text">Proficiencies</span></h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Core HTML & CSS -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-brands fa-html5 category-icon"></i>
+                            <h3>HTML5 &amp; Semantics</h3>
+                        </div>
+                        <p class="category-desc">Building clean, standard-compliant, accessible structure for web applications.</p>
+                        
+                        <div class="skill-list">
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Semantic Tags (header, section, footer)</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML Forms &amp; Input Validation</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SEO &amp; Accessibility (ARIA)</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS & Layouts -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-brands fa-css3-alt category-icon"></i>
+                            <h3>CSS3 &amp; Modern Layouts</h3>
+                        </div>
+                        <p class="category-desc">Designing eye-catching, responsive, fluid layouts across all viewport sizes.</p>
+                        
+                        <div class="skill-list">
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Flexbox &amp; CSS Grid</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Web Design (Media Queries)</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Animations, Transitions &amp; Glassmorphism</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript & Interactivity -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-brands fa-js category-icon"></i>
+                            <h3>JavaScript &amp; DOM Manipulation</h3>
+                        </div>
+                        <p class="category-desc">Adding dynamic functionality, event listeners, dark theme toggles, and interaction logic.</p>
+                        
+                        <div class="skill-list">
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">DOM Manipulation &amp; Event Handling</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 82%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">ES6+ Syntax &amp; Functions</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Interactive UI Components</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Workflow -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-gears category-icon"></i>
+                            <h3>Tools &amp; Workflow</h3>
+                        </div>
+                        <p class="category-desc">Utilizing modern developer tooling and version control systems effectively.</p>
+                        
+                        <div class="skill-list">
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git &amp; GitHub Version Control</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 88%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code &amp; Developer Tools</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-progress-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Wireframing &amp; Design</span>
+                                    <span class="skill-percent">78%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Badges Grid -->
+                <div class="tech-stack-badges">
+                    <h4 class="badges-title">Technologies I Work With</h4>
+                    <div class="badges-wrapper">
+                        <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="tech-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="tech-badge"><i class="fa-solid fa-code"></i> VS Code</span>
+                        <span class="tech-badge"><i class="fa-solid fa-mobile"></i> Responsive Design</span>
+                        <span class="tech-badge"><i class="fa-solid fa-universal-access"></i> Accessibility</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Let's Connect</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                    <div class="title-bar"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card">
+                        <h3>Get In Touch</h3>
+                        <p class="contact-desc">
+                            Have a question, feedback on Week 1 assignment, or want to collaborate on a project? Feel free to reach out anytime!
+                        </p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-info">
+                                    <span class="detail-label">Email</span>
+                                    <a href="mailto:yogesh@example.com" class="detail-value">yogesh@example.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="detail-info">
+                                    <span class="detail-label">GitHub Repository</span>
+                                    <a href="https://github.com/y0gish123/internship-practice-" target="_blank" rel="noopener" class="detail-value">y0gish123 / internship-practice-</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-info">
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">India</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="detail-info">
+                                    <span class="detail-label">Availability</span>
+                                    <span class="detail-value">Open for Internship Projects</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials">
+                            <span>Follow Me:</span>
+                            <div class="social-icons">
+                                <a href="https://github.com/y0gish123" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card">
+                        <h3>Send A Message</h3>
+                        
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="user-name">Your Full Name <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <input type="text" id="user-name" name="name" class="form-control" placeholder="John Doe" required>
+                                </div>
+                                <span class="error-msg" id="name-error">Please enter your name.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-email">Your Email Address <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <input type="email" id="user-email" name="email" class="form-control" placeholder="john@example.com" required>
+                                </div>
+                                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-subject">Subject <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-tag input-icon"></i>
+                                    <input type="text" id="user-subject" name="subject" class="form-control" placeholder="Week 1 Portfolio Feedback" required>
+                                </div>
+                                <span class="error-msg" id="subject-error">Please provide a subject.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-message">Your Message <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-comment-dots input-icon textarea-icon"></i>
+                                    <textarea id="user-message" name="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error">Please type your message.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+
+                        <div class="form-alert" id="form-alert" style="display: none;">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div class="alert-text">
+                                <strong>Message Sent Successfully!</strong>
+                                <p>Thank you for reaching out. I will get back to you shortly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <span class="logo-bracket">&lt;</span>Yogesh<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Week 1 Web Development Internship Practice — HTML &amp; CSS Fundamentals Portfolio.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Assignment Info</h4>
+                    <p><strong>Focus:</strong> Structure + Design + Layout</p>
+                    <p><strong>Tags:</strong> header, section, footer, css styling</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yogesh. Created for Web Development Internship Practice Assignment 1.</p>
+                <a href="#hero" class="back-to-top" id="back-to-top" title="Back to top" aria-label="Back to top">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
